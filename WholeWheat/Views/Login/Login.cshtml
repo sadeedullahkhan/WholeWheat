@@ -1,4 +1,7 @@
 ﻿@model WholeWheat.Models.Admin.AdminLoginModel
+@{
+    Layout = null;
+}
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,7 +29,7 @@
     <div class="modal fade in" id="login-modal" tabindex="-1" role="dialog" style="display: block; padding-left: 17px;">
         <div class="modal-dialog">
             <div class="loginmodal-container">
-                <img src="~/img/logo.jpg" alt="logo" style="max-height: 45px; max-width: 200px; margin: 0 auto"/>
+                <img src="~/img/logo.jpg" alt="logo" style="max-height: 45px; max-width: 200px; margin: 0 auto" />
                 <h1>Login to Your Account</h1><br>
 
                 @using (Html.BeginForm(null, null, FormMethod.Post, new { @class = "login", id = "adminLoginForm", enctype = "multipart/form-data" }))
@@ -39,7 +42,7 @@
                     <input class="login loginmodal-submit" value="Login" type="submit" />
                 }
                 <div class="login-help">
-                    © 2019 Sadeed Ullah Khan
+                    © 2020 
                 </div>
             </div>
         </div>
